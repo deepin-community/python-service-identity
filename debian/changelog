@@ -1,3 +1,45 @@
+python-service-identity (24.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+
+ -- Scott Kitterman <scott@kitterman.com>  Tue, 16 Jan 2024 14:12:18 -0500
+
+python-service-identity (23.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Remove debian/patches/Add-missing-six-dependency, no longer needed
+  * Remove signature checking from debian/watch, no loner supported by pypi
+  * Update debian/watch to version 4 and simplify so it works
+  * New upstream release (Closes: #1008863)
+  * Update Homepage: field in debian/control to point to GitHub vice PyPI
+  * Update build-depends to match upstream switch to pyproject.toml and
+    hatchling
+  * Add python3-hatch-vcs and python3-hatch-fancy-pypi-readme to build-depends
+  * Remove dh_auto_test override, no longer needed
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 07 Jul 2023 14:19:40 -0400
+
+python-service-identity (18.1.0-8) unstable; urgency=medium
+
+  * Cherry-pick addition of missing six dependency from upstream
+    (Closes: #1030628).
+
+ -- Robie Basak <robie@justgohome.co.uk>  Sun, 05 Feb 2023 22:10:42 +0000
+
+python-service-identity (18.1.0-7) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 20 Jun 2022 01:41:00 -0400
+
 python-service-identity (18.1.0-6) unstable; urgency=medium
 
   * Drop python2 support; Closes: #938164
